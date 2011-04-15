@@ -1,0 +1,97 @@
+/* CSS Document */
+
+body {
+	font-family:Arial;	
+}
+
+a { color:#000; }
+.hr { border-bottom-style:solid; border-bottom-color:#666; margin:1px; }
+
+#page {
+	width:960px;
+	margin:10px auto 40px auto;	
+}
+
+#slogan {
+	float:left;
+}
+
+#slogan h1 {
+	font-size:24px;
+	margin-bottom:5px;
+	float:left;
+	font-weight:normal;
+}
+#slogan a {
+	color:#000;
+	text-decoration:none;
+}
+
+#slogan h2 {
+	font-size:18px;
+	font-weight:normal;
+	float:left;
+	margin-left:20px;
+	margin-top:0px;
+	color:#666;
+}
+#slogan h2 a {
+	color:#666;
+}
+
+#menu {
+	float:right;
+	margin-top:0px;
+}
+
+#menu li {
+	display:inline;
+	margin-left:30px;
+	font-size:14px;
+}
+
+#footer {
+	font-size:12px;
+}
+
+#content {
+	clear:both;
+	margin-top:40px;
+}
+#content h1 {
+	color:#333;
+	font-size:50px;
+	font-weight:normal;
+	margin-bottom:20px;
+}
+#content h2 {
+	color:#333;
+	text-transform:uppercase;
+	font-size:30px;
+	margin-bottom:20px;
+	font-weight:normal;
+}
+#content div.left {
+	float:left;
+	width:590px;
+}
+#content div.right {
+	float:right;
+	width:350px;
+}
+
+ul.point {
+	margin-left:20px;
+}
+
+ul.point, ul.point li {
+	list-style:circle;
+}
+
+ul.point li {
+	margin-bottom:20px;
+}
+
+.mission {
+	font-size:18px;
+}
