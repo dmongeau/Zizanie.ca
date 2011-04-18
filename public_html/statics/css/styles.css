@@ -6,6 +6,7 @@ body {
 
 a { color:#000; }
 .hr { border-bottom-style:solid; border-bottom-color:#666; margin:1px; }
+#content .hr { border-bottom-style:dotted; border-bottom-color:#ddd; margin:20px 0; }
 
 #page {
 	width:960px;
@@ -18,7 +19,7 @@ a { color:#000; }
 
 #slogan h1 {
 	font-size:24px;
-	margin-bottom:5px;
+	margin:10px 0;
 	float:left;
 	font-weight:normal;
 }
@@ -41,7 +42,7 @@ a { color:#000; }
 
 #menu {
 	float:right;
-	margin-top:0px;
+	margin-top:10px;
 }
 
 #menu li {
@@ -52,11 +53,12 @@ a { color:#000; }
 
 #footer {
 	font-size:12px;
+	margin-top:5px;
 }
 
 #content {
 	clear:both;
-	margin-top:40px;
+	color:#333;
 }
 #content h1 {
 	color:#333;
@@ -94,4 +96,13 @@ ul.point li {
 
 .mission {
 	font-size:18px;
+}
+
+a.advanced {
+	padding-left:20px;
+	background:url(/statics/icons/arrow_sans_right_16.png) no-repeat;
+}
+
+div.advanced {
+	margin-top:20px;
 }
