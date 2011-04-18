@@ -1,0 +1,44 @@
+/* CSS Document */
+
+#page {
+	width:720px;
+	margin:10px auto 40px auto;	
+}
+
+.hr {
+	border-color:#999;
+}
+
+#footer {
+	position:fixed;
+	padding:0;
+	bottom:0px;
+	right:0px;
+	background:#333 !important;
+}
+
+#footer .fleft {
+	margin:5px 20px 0px 10px;
+}
+
+#footer, #footer a {
+	color:#999;
+}
+
+#footer:hover, #footer:hover a {
+	color:#ccc;
+}
+
+#footer h1 {
+	font-size:16px;
+	margin:0;
+	padding:0;
+	position:relative;
+	top:-3px;
+	margin-right:20px;
+}
+
+#footer h1 a {
+	color:#999;
+	text-decoration:none;
+}

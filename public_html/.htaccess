@@ -23,8 +23,12 @@ RewriteCond %{REQUEST_METHOD} !POST
 RewriteCond %{QUERY_STRING} !.*=.*
 RewriteCond %{DOCUMENT_ROOT}/statics/photos/_cache/$1 -f
 RewriteRule ^resizer/(.*) /statics/photos/_cache/$1 [L]
-##############
 
+
+##############Sous-domaine##################
+RewriteCond %{HTTP_HOST} !^www.zizanie.(ca|local)$ [NC]
+RewriteCond %{HTTP_HOST} ^([a-z0-9\-\_]+).zizanie.(ca|local)$ [NC]
+RewriteRule ^(.*)$ index.php?url=/page/%1/$1 [QSA,L]
 
 
 RewriteCond %{REQUEST_FILENAME} !\.(ico|jpg|jpeg|gif|png)$ [NC]

@@ -27,6 +27,11 @@ h1 { margin:20px 0; }
 h2 { margin:15px 0; }
 h3, h4 { margin:10px 0; }
 
+.ml10 { margin-left:10px; }
+.mr10 { margin-right:10px; }
+.mt10 { margin-top:10px; }
+.mb10 { margin-bottom:10px; }
+
 
 
 
@@ -36,17 +41,33 @@ h3, h4 { margin:10px 0; }
  *
  */
 .field {
-	margin-bottom:20px;
+	margin-bottom:40px;
+	font-size:16px;	
 }
 .field label {
 	display:block;
-	font-size:16px;	
 	margin:0;
 	margin-bottom:3px;
+	font-weight:bold;
+}
+.field .input {
+	font-size:14px;
+	line-height:2em;
+}
+.field .input label {
+	font-weight:normal;
+}
+.field .input label.fleft {
+	width:75px;
 }
 .field input.text {
-	width:600px;
+	width:500px;
 	font-size:16px;
+	padding:2px;
+	border:solid 1px #ddd;
+	margin:0;
+}
+.field input.file {
 	padding:2px;
 	border:solid 1px #ddd;
 	margin:0;
@@ -54,12 +75,15 @@ h3, h4 { margin:10px 0; }
 .field input.title {
 	font-size:24px;
 }
+.field input.color {
+	width:100px;
+}
 .field input.address {
 	width:15em;
 	margin-left:5px;
 }
 .field textarea {
-	width:600px;
+	width:500px;
 	height:150px;
 	font-size:16px;
 	padding:2px;
@@ -75,14 +99,14 @@ a.button, button {
 	text-decoration:none;
 	padding:10px;
 	font-size:16px;
-	border:solid 1px #ccc;
+	border:solid 1px #333;
 	background:#ddd;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	cursor:pointer;
 	background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#DDD));
-	background: -moz-linear-gradient(top,  #eee,  #ddd);
+	background: -moz-linear-gradient(top,  #fff,  #eee);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd');
 }
 a.button:active, button:active {

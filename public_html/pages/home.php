@@ -11,7 +11,7 @@
     <div class="spacer-small"></div>
     <ul class="point">
     	<li><a href="http://fabiennelarouche.zizanie.ca">Des idées pour Fabienne Larouche</a></li>
-    	<li><a href="http://chara.zizanie.ca">Chara - Fuck you NHL</a></li>
+    	<li><a href="http://chara.zizanie.local">Chara - Fuck you NHL</a></li>
     	<li><a href="http://richardmartineau.zizanie.ca">Richard Martineau est contre...</a></li>
     </ul>
     
