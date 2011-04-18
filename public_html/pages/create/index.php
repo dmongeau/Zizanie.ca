@@ -5,6 +5,11 @@ require PATH_ROOT.'/lib/recaptchalib.php';
 
 if($_POST) {
 	try {
+		
+		if(!isset($_POST['title']) || empty($_POST['title'])) {
+			throw new Exception('Vous devez entrer un titre pour la page');
+		}
+		
 		$privatekey = $this->getConfig('recaptcha.private');
 		$resp = recaptcha_check_answer($privatekey,
 									$_SERVER["REMOTE_ADDR"],
@@ -14,6 +19,19 @@ if($_POST) {
 		if(!$resp->is_valid) {
 			throw new Exception('Veuillez entrer les bons caractères dans la vérification anti-robot');
 		}
+		
+		
+		require_once PATH_ROOT.'/models/Page.php';
+		
+		$Page = new Page();
+		$Page->setData(array(
+			'title' => $_POST['title'],
+			'published' => 1
+		));
+		$Page->save();
+		$page = $Page->fetch();
+		
+		
 	} catch(Exception $e) {
 		$error = $e->getMessage();
 	}
@@ -44,13 +62,15 @@ $this->addScript('/statics/js/create.js');
         
         <div class="field">
             <label>Choisir une adresse :</label>
-            <div class="input">http://<input type="text" name="title" class="text address" maxlength="30" />&nbsp;&nbsp;.zizanie.ca</div>
+            <div class="input">http://<input type="text" name="permalink" class="text address" maxlength="30" />&nbsp;&nbsp;.zizanie.ca</div>
         </div>
         
         <div class="field">
             <label>Type de page :</label>
             <div class="input">
             	<label><input type="radio" name="type" value="comments" /> Commentaires</label>
+            	<label><input type="radio" name="type" value="tweet" /> Tweet</label>
+            	<label><input type="radio" name="type" value="like" /> Like</label>
             </div>
         </div>
         

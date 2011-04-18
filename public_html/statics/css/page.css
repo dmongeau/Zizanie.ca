@@ -22,11 +22,11 @@
 }
 
 #footer, #footer a {
-	color:#999;
+	color:#ccc;
 }
 
 #footer:hover, #footer:hover a {
-	color:#ccc;
+	color:#eee;
 }
 
 #footer h1 {
@@ -39,6 +39,6 @@
 }
 
 #footer h1 a {
-	color:#999;
+	color:#ccc;
 	text-decoration:none;
 }
