@@ -34,6 +34,29 @@ h3, h4 { margin:10px 0; }
 
 
 
+/*
+ *
+ * Lists
+ *
+ */
+ol, ol li {
+	list-style:decimal;
+}
+ol li {
+	margin-left:20px;
+	margin-bottom:10px;
+}
+
+ul.point {
+	margin-left:20px;
+}
+ul.point, ul.point li {
+	list-style:circle;
+}
+ul.point li {
+	margin-bottom:20px;
+}
+
 
 /*
  *

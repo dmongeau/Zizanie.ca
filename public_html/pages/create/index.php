@@ -62,14 +62,15 @@ $this->addScript('/statics/js/create.js');
         
         <div class="field">
             <label>Choisir une adresse :</label>
-            <div class="input">http://<input type="text" name="permalink" class="text address" maxlength="30" />&nbsp;&nbsp;.zizanie.ca</div>
+            <div class="input">http://<input type="text" name="permalink" class="text address" maxlength="30" />&nbsp;.zizanie.ca</div>
         </div>
         
         <div class="field">
             <label>Type de page :</label>
             <div class="input">
             	<label><input type="radio" name="type" value="comments" /> Commentaires</label>
-            	<label><input type="radio" name="type" value="tweet" /> Tweet</label>
+            	<label><input type="radio" name="type" value="battle" /> Commentaires (Pour/Contre)</label>
+            	<label><input type="radio" name="type" value="tweet" /> Bouton Tweet</label>
             	<label><input type="radio" name="type" value="like" /> Like</label>
             </div>
         </div>

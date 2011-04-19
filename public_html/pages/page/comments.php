@@ -1,13 +1,13 @@
 <style type="text/css">
 
 	body {
-		font-family:Verdana, Geneva, sans-serif;
-		background:<?=$page['backgroundColor']?>;
+		<?=$Page->fontFamily()?>
+		<?=$Page->background()?>
 	}
 	
 	#content h1 {
 		font-size:<?=$page['titleSize']?>px !important;
-		color:<?=$page['titleColor']?> !important;
+		<?=$Page->titleColor()?>
 		margin:50px 0;	
 	}
 	
