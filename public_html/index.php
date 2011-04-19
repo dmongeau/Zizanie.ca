@@ -1,16 +1,22 @@
 <?php
 
 define('DOMAIN','zizanie.local');
+define('PATH_APP',dirname(__FILE__).'/../app');
 define('PATH_ROOT',dirname(__FILE__));
-define('PATH_PAGES',dirname(__FILE__).'/pages');
-define('PATH_PLUGINS',dirname(__FILE__).'/../Gregory/plugins');
+define('PATH_PAGES',PATH_ROOT.'/pages');
+define('PATH_PLUGINS',PATH_APP.'/Gregory/plugins');
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
-require PATH_ROOT.'/../Gregory/Gregory.php';
-require PATH_ROOT.'/../Kate/Kate.php';
 
-$config = include PATH_ROOT.'/config.php';
+require PATH_APP.'/Gregory/Gregory.php';
+require PATH_APP.'/Kate/Kate.php';
 
+
+$config = include PATH_APP.'/config.php';
 $app = new Gregory($config);
+
+
 $app->addPlugin('db', $app->getConfig('db'));
 
 $app->addRoute(array(
@@ -19,16 +25,16 @@ $app->addRoute(array(
 	'/page/:permalink/' => 'page/index.php',
 ));
 
+
 $app->setData('domain',DOMAIN);
 
 $app->addStylesheet('/statics/css/commons.css');
 $app->addStylesheet('/statics/css/styles.css');
 $app->addScript('https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js');
 
+
 $app->bootstrap();
 
-//ini_set('display_errors', 1);
-//error_reporting(E_ALL);
 $app->run(isset($_GET['url']) ? $_GET['url']:null);
 
 $app->render();

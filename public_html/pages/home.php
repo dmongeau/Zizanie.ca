@@ -1,6 +1,6 @@
 <?php
 
-	require_once PATH_ROOT.'/models/Page.php';
+	require_once PATH_APP.'/models/Page.php';
 	
 	$select = $this->db->select()->from(array('p'=>'pages'),array('*'))
 									->order('dateadded DESC')

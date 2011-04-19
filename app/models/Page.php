@@ -1,6 +1,6 @@
 <?php
 
-Kate::setDefaultDatabase(Gregory::get()->db);
+//Kate::setDefaultDatabase(Gregory::get()->db);
 
 class Page extends Kate {
 	

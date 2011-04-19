@@ -1,6 +1,6 @@
-[submodule "Gregory"]
-	path = Gregory
+[submodule "app/Gregory"]
+	path = app/Gregory
 	url = git@github.com:dmongeau/Gregory.git
-[submodule "Kate"]
-	path = Kate
+[submodule "app/Kate"]
+	path = app/Kate
 	url = git@github.com:dmongeau/Kate.git

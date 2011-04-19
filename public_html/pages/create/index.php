@@ -1,6 +1,6 @@
 <?php
 
-require PATH_ROOT.'/lib/recaptchalib.php';
+require PATH_APP.'/lib/recaptchalib.php';
 
 
 if($_POST) {
@@ -20,8 +20,7 @@ if($_POST) {
 			throw new Exception('Veuillez entrer les bons caractères dans la vérification anti-robot');
 		}
 		
-		
-		require_once PATH_ROOT.'/models/Page.php';
+		require PATH_APP.'/models/Page.php';
 		
 		$Page = new Page();
 		$Page->setData(array(
