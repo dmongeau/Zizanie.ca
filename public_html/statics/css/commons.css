@@ -77,6 +77,9 @@ ul.point li {
 	font-size:14px;
 	line-height:2em;
 }
+.field .input .note {
+	line-height:1em;
+}
 .field .input label {
 	font-weight:normal;
 }
@@ -99,10 +102,10 @@ ul.point li {
 	font-size:24px;
 }
 .field input.color {
-	width:100px;
+	width:100px !important;
 }
 .field input.address {
-	width:15em;
+	width:15em !important;
 	margin-left:5px;
 }
 .field textarea {

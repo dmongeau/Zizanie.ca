@@ -6,6 +6,7 @@ $route = $this->getRoute();
 
 $this->setConfig('layout',dirname(__FILE__).'/_layout.html');
 $this->addStylesheet('/statics/css/page.css');
+$this->addScript('/statics/js/page.js');
 
 require_once PATH_APP.'/models/Page.php';
 

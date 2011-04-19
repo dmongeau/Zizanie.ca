@@ -12,6 +12,7 @@
 	}
 	
 	#comments {
+		background:#fff;
 	}	
 	#loading {
 		line-height:1.5em;
@@ -37,6 +38,6 @@
 
 <div id="comments" style="display:none;">
 	<div id="fb-root"></div>
-	<script src="http://connect.facebook.net/fr_CA/all.js#appId=170979996286216&amp;xfbml=1"></script>
+	<script src="http://connect.facebook.net/fr_CA/all.js"></script>
 	<fb:comments href="http://<?=$_SERVER['HTTP_HOST']?>" num_posts="50" width="720" showform="true" canpost="true" publish_feed="true"></fb:comments>
 </div>

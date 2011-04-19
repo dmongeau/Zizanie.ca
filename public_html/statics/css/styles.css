@@ -6,7 +6,7 @@ body {
 
 a { color:#000; }
 .hr { border-bottom-style:solid; border-bottom-color:#666; margin:1px; }
-#content .hr { border-bottom-style:dotted; border-bottom-color:#ddd; margin:40px 0; }
+#content .hr { border-bottom-style:dotted; border-bottom-color:#999; margin:40px 0; }
 
 #page {
 	width:960px;
@@ -90,34 +90,38 @@ a { color:#000; }
 .field input.address {
 	width:auto;
 }
-a.advanced {
+a.arrow {
 	padding-left:20px;
 	background:url(/statics/icons/arrow_sans_right_16.png) no-repeat;
 }
 
-a.advanced-down {
+a.arrow-down {
 	background-image:url(/statics/icons/arrow_sans_down_16.png);
 }
 
-div.advanced {
+div.advanced, div.customize {
 	margin: 30px 0 30px 25px;
 	font-size:12px;
 }
 
-div.advanced .field {
+div.advanced .field, div.customize .field {
 	margin-bottom:30px;
 }
 
-div.advanced .field label {
+div.advanced .field label, div.customize .field label {
 	float:left;
 	width:175px;
 	font-size:12px;
 	margin-top:7px;
 }
 
-div.advanced .field .input {
+div.advanced .field .input, div.customize .field .input {
 	float:left;
 	width:350px;
+}
+
+div.advanced .field input.text, div.advanced .field textarea, div.customize .field input.text, div.customize .field textarea {
+	width:325px;
 }
 .field span.color {
 	width:18px;
@@ -140,4 +144,20 @@ ul.pages li {
 ul.pages li a {
 	text-decoration:none;
 	font-size:18px;
+}
+
+button.submit {
+	font-size:24px;
+	padding:10px;	
+}
+
+label .note {
+	 font-size:12px;
+	 color:#666;
+	 font-weight:normal;
+}
+
+#preview {
+	border:solid 1px #ddd;
+	padding:10px;
 }

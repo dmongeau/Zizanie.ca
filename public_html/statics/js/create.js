@@ -28,9 +28,20 @@ $(function() {
 		e.preventDefault();
 		$('div.advanced').slideToggle('fast',function() {
 			if($(this).is(':visible')) {
-				$('a.advanced').addClass('advanced-down');
+				$('a.advanced').addClass('arrow-down');
 			} else {
-				$('a.advanced').removeClass('advanced-down');
+				$('a.advanced').removeClass('arrow-down');
+			}
+		});
+	});
+	
+	$('a.customize').click(function(e) {
+		e.preventDefault();
+		$('div.customize').slideToggle('fast',function() {
+			if($(this).is(':visible')) {
+				$('a.customize').addClass('arrow-down');
+			} else {
+				$('a.customize').removeClass('arrow-down');
 			}
 		});
 	});
