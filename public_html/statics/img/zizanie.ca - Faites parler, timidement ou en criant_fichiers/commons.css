@@ -145,12 +145,12 @@ a.button, button {
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	cursor:pointer;
-	background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
-	background: -moz-linear-gradient(top,  #eee,  #ccc);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ccc');
+	background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#DDD));
+	background: -moz-linear-gradient(top,  #fff,  #eee);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd');
 }
 a.button:active, button:active {
-	background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#eee));
-	background: -moz-linear-gradient(top,  #ccc,  #eee);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc', endColorstr='#eeeeee');
+	background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#eee));
+	background: -moz-linear-gradient(top,  #ddd,  #eee);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#eeeeee');
 }

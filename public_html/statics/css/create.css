@@ -1,0 +1,155 @@
+/* CSS Document */
+
+#content div.right {
+	background:#eee;
+	padding:50px 20px;
+	width:260px;
+}
+
+.field input.address {
+	width:auto;
+}
+a.arrow {
+	padding-left:20px;
+	background:url(/statics/icons/arrow_sans_right_16.png) no-repeat;
+}
+
+a.arrow-down {
+	background-image:url(/statics/icons/arrow_sans_down_16.png);
+}
+
+div.advanced, div.customize {
+	margin: 30px 0 30px 25px;
+	font-size:12px;
+}
+
+div.customize {
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+div.advanced .field, div.customize .field {
+	margin-bottom:30px;
+}
+
+div.customize .field {
+	margin-bottom:10px;
+}
+
+div.advanced .field label, div.customize .field label {
+	float:left;
+	width:175px;
+	font-size:12px;
+	margin-top:7px;
+}
+
+div.customize .field label {
+	width:120px;
+}
+
+div.advanced .field .input, div.customize .field .input {
+	float:left;
+	width:350px;
+	margin-top:5px;
+}
+
+div.customize .field .input {
+	width:180px;
+}
+
+div.advanced .field input.text, div.advanced .field textarea, div.customize .field input.text, div.customize .field textarea {
+	width:325px;
+	font-size:12px;
+	position:relative;
+	top:-5px;
+}
+div.customize .field select, div.advanced .field select {
+	font-size:12px;
+}
+.field span.color {
+	width:13px;
+	height:13px;
+	display:inline-block;
+	border:solid 1px #ddd;
+	padding:3px;
+	position:relative;
+	top:1px;
+}
+
+ul.pages li {
+	margin-bottom:5px;
+	text-align:left;
+	border:solid 2px #333;
+	color:#333;
+	background:#fff;
+}
+
+button.submit {
+	font-size:24px;
+	padding:10px;	
+}
+
+label .note {
+	 font-size:12px;
+	 color:#666;
+	 font-weight:normal;
+}
+
+.field .options {
+	font-size:12px;
+	margin-left:20px;
+}
+
+.field .options label {
+	font-size:12px;
+	float:left;
+	width:75px;
+	margin-right:5px;
+	text-align:right;
+	display:block;
+}
+
+.field .options .field {
+	margin-bottom:5px;
+}
+
+.field .options input {
+	width:200px;
+}
+
+#preview {
+	background:#eee;
+	border:solid 1px #ddd;
+	padding:10px;
+}
+
+a.facebookLogin, a.twitterLogin {
+	background:url(/statics/img/signin_facebook.png) no-repeat;
+	width:150px;
+	display:block;
+	height:23px;
+	text-decoration:none;
+	margin-bottom:10px;
+}
+
+a.twitterLogin {
+	background-image:url(/statics/img/signin_twitter.png);
+}
+
+a.facebookLogin:hover, a.twitterLogin:hover {
+	background-position:0px -24px;
+}
+
+a.facebookLogin:active, a.twitterLogin:active {
+	background-position:0px -47px;
+}
+
+select optgroup {
+	text-transform:uppercase;
+	font-style:normal;	
+}
+
+select optgroup option {
+	margin-left:20px;	
+	text-transform:none;
+}

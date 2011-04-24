@@ -1,0 +1,218 @@
+/* CSS Document */
+
+body {
+	font-family:Arial;	
+}
+
+a { color:#000; }
+.hr { border-bottom-style:solid; border-bottom-color:#666; margin:1px; }
+#content .hr { border-bottom-style:dotted; border-bottom-color:#999; margin:40px 0; }
+
+#page {
+	width:960px;
+	margin:10px auto 40px auto;	
+}
+
+#slogan {
+	float:left;
+}
+
+#slogan h1 {
+	font-size:24px;
+	margin:10px 0;
+	float:left;
+	font-weight:normal;
+}
+#slogan a {
+	color:#000;
+	text-decoration:none;
+}
+
+#slogan h2 {
+	font-size:18px;
+	font-weight:normal;
+	float:left;
+	margin-left:20px;
+	margin-top:0px;
+	color:#666;
+}
+#slogan h2 a {
+	color:#666;
+}
+
+#menu {
+	float:right;
+	margin-top:10px;
+}
+
+#menu li {
+	display:inline;
+	margin-left:30px;
+	font-size:14px;
+}
+
+#footer {
+	font-size:12px;
+	margin-top:5px;
+}
+
+#content {
+	clear:both;
+	color:#333;
+}
+#content h1 {
+	color:#333;
+	font-size:50px;
+	font-weight:normal;
+	margin-bottom:20px;
+}
+#content h2 {
+	color:#333;
+	text-transform:uppercase;
+	font-size:30px;
+	margin-bottom:20px;
+	font-weight:normal;
+}
+#content div.left {
+	float:left;
+	width:590px;
+}
+#content div.right {
+	float:right;
+	width:350px;
+}
+#content div.right p {
+	font-size:14px;
+}
+
+.mission {
+	font-size:18px;
+}
+
+
+.field input.address {
+	width:auto;
+}
+a.arrow {
+	padding-left:20px;
+	background:url(/statics/icons/arrow_sans_right_16.png) no-repeat;
+}
+
+a.arrow-down {
+	background-image:url(/statics/icons/arrow_sans_down_16.png);
+}
+
+div.advanced, div.customize {
+	margin: 30px 0 30px 25px;
+	font-size:12px;
+}
+
+div.customize {
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
+div.advanced .field, div.customize .field {
+	margin-bottom:30px;
+}
+
+div.customize .field {
+	margin-bottom:10px;
+}
+
+div.advanced .field label, div.customize .field label {
+	float:left;
+	width:175px;
+	font-size:12px;
+	margin-top:7px;
+}
+
+div.customize .field label {
+	width:120px;
+}
+
+div.advanced .field .input, div.customize .field .input {
+	float:left;
+	width:350px;
+}
+
+div.customize .field .input {
+	width:180px;
+}
+
+div.advanced .field input.text, div.advanced .field textarea, div.customize .field input.text, div.customize .field textarea {
+	width:325px;
+	font-size:12px;
+	position:relative;
+	top:-5px;
+}
+div.customize .field select, div.advanced .field select {
+	font-size:12px;
+}
+.field span.color {
+	width:13px;
+	height:13px;
+	display:inline-block;
+	border:solid 1px #ddd;
+	padding:3px;
+	position:relative;
+	top:1px;
+}
+
+ul.pages li {
+	margin-bottom:5px;
+	text-align:left;
+	border:solid 2px #333;
+	color:#333;
+	background:#fff;
+}
+
+ul.pages li a {
+	display:block;
+	text-decoration:none;
+	font-size:18px;
+	padding:10px;
+}
+
+button.submit {
+	font-size:24px;
+	padding:10px;	
+}
+
+label .note {
+	 font-size:12px;
+	 color:#666;
+	 font-weight:normal;
+}
+
+#preview {
+	background:#eee;
+	border:solid 1px #ddd;
+	padding:10px;
+}
+
+#iframe {
+	border:solid 1px #ddd;
+	padding:10px;
+}
+
+a.facebookLogin, a.twitterLogin {
+	background:url(/statics/img/signin_facebook.png) no-repeat;
+	width:150px;
+	display:block;
+	height:23px;
+	text-decoration:none;
+	margin-bottom:10px;
+}
+
+a.twitterLogin {
+	background-image:url(/statics/img/signin_twitter.png);
+}
+
+a.facebookLogin:hover, a.twitterLogin:hover {
+	background-position:0px -24px;
+}
+
+a.facebookLogin:active, a.twitterLogin:active {
+	background-position:0px -47px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>%{TITLE} - Zizanie.ca</title>
+    
+    <meta property="og:site_name" content="Zizanie.ca" />
+    <meta property="og:title" content="%{TITLE}" />
+    <meta property="og:url" content="%{URL}" />
+    <meta property="og:type" content="website" />
+    
+    %{HEAD}
+    %{SCRIPTS}
+    %{STYLESHEETS}
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+        </div>
+        
+        <div id="content">
+            %{CONTENT}
+            <div class="clear"></div>
+        </div>
+        
+        <div class="clear"></div>
+        <div class="spacer"></div>
+        
+        <div id="footer" align="left">
+        
+        	<h1 class="fleft"><a href="http://%{DOMAIN}/">zizanie.ca</a></h1>
+            <div class="like fleft">
+            	<fb:like href="%{URL}" layout="button_count" show_faces="false" width="90" font="arial" colorscheme="dark"></fb:like>
+            </div>
+        	<div class="links">
+            	<a href="http://%{DOMAIN}/hasard">Site au hasard</a> | 
+            	<a href="http://%{DOMAIN}/creer">Créer une page</a> | 
+            	<a href="/suivant">Site suivant »</a>
+            </div>
+            <div class="clear"></div>
+            
+        </div>
+    </div>
+</body>
+</html>

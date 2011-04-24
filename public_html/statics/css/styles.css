@@ -81,83 +81,26 @@ a { color:#000; }
 	float:right;
 	width:350px;
 }
+#content div.right p {
+	font-size:14px;
+}
 
 .mission {
 	font-size:18px;
 }
 
-
-.field input.address {
-	width:auto;
-}
-a.arrow {
-	padding-left:20px;
-	background:url(/statics/icons/arrow_sans_right_16.png) no-repeat;
-}
-
-a.arrow-down {
-	background-image:url(/statics/icons/arrow_sans_down_16.png);
-}
-
-div.advanced, div.customize {
-	margin: 30px 0 30px 25px;
-	font-size:12px;
-}
-
-div.advanced .field, div.customize .field {
-	margin-bottom:30px;
-}
-
-div.advanced .field label, div.customize .field label {
-	float:left;
-	width:175px;
-	font-size:12px;
-	margin-top:7px;
-}
-
-div.advanced .field .input, div.customize .field .input {
-	float:left;
-	width:350px;
-}
-
-div.advanced .field input.text, div.advanced .field textarea, div.customize .field input.text, div.customize .field textarea {
-	width:325px;
-}
-.field span.color {
-	width:18px;
-	height:18px;
-	display:inline-block;
-	border:solid 1px #ddd;
-	padding:3px;
-	position:relative;
-	top:7px;
-}
-
 ul.pages li {
-	padding:10px;
 	border:solid 2px #333;
 	color:#333;
 	background:#fff;
 	margin-bottom:5px;
+	height:38px;
 }
 
 ul.pages li a {
+	display:block;
 	text-decoration:none;
 	font-size:18px;
-}
-
-button.submit {
-	font-size:24px;
-	padding:10px;	
-}
-
-label .note {
-	 font-size:12px;
-	 color:#666;
-	 font-weight:normal;
-}
-
-#preview {
-	border:solid 1px #ddd;
 	padding:10px;
 }
+

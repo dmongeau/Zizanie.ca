@@ -11,6 +11,7 @@ error_reporting(E_ALL);
 
 require PATH_APP.'/Gregory/Gregory.php';
 require PATH_APP.'/Kate/Kate.php';
+require PATH_APP.'/lib/functions.php';
 
 
 $config = include PATH_APP.'/config.php';
@@ -19,10 +20,15 @@ $app = new Gregory($config);
 
 $app->addPlugin('db', $app->getConfig('db'));
 
+
 $app->addRoute(array(
 	'/' => 'home.php',
 	'/creer/' => 'create/index.php',
+	'/apercu/' => 'page/preview.php',
 	'/page/:permalink/' => 'page/index.php',
+	
+	'/upload/' => 'upload/upload.php',
+	'/upload/progress/' => 'upload/progress.php',
 ));
 
 
@@ -30,7 +36,7 @@ $app->setData('domain',DOMAIN);
 
 $app->addStylesheet('/statics/css/commons.css');
 $app->addStylesheet('/statics/css/styles.css');
-$app->addScript('https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js');
+$app->addScript('/statics/js/jquery.js');
 
 
 $app->bootstrap();

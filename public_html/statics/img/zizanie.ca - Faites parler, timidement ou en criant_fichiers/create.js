@@ -9,7 +9,7 @@ $(function() {
 		$('div.customize select, div.customize input').each(function() {
 			params[$(this).attr('name')] = $(this).val();
 		});
-		console.log(params);
+		
 		if(!$('#preview iframe').is('.loaded') || reload === true) {
 			$('#preview iframe').attr('src','/apercu/?'+jQuery.param(params));
 			$('#preview iframe').addClass('loaded');
@@ -18,8 +18,7 @@ $(function() {
 			$iframe.find('#content h1').css({
 				'fontFamily' : $('div.customize select[name=fontFamily] option:selected').attr('rel'),
 				'color' : params['titleColor'],
-				'fontSize' : params['titleSize']+'px',
-				'textAlign' : params['titleAlign']
+				'fontSize' : params['titleSize']+'px'
 			}).text(params['title']);
 			
 			$iframe.find('#content h2').css({
@@ -34,7 +33,7 @@ $(function() {
 		}
 	}
 	
-	$('select[name=titleAlign], select[name=fontSize], input[type=text]',$('div.customize')).change(updatePreview);
+	$('select[name=fontSize], input[type=text]',$('div.customize')).change(updatePreview);
 	$('div.customize select[name=fontFamily]').change(function() {
 		if(jQuery.inArray($(this).val(),['verdana','arial','georgia']) == -1) {
 			updatePreview(true);
@@ -49,19 +48,9 @@ $(function() {
 		updatePreview(true);
 	});
 	$('input[name=type]').click(function() {
-		if(($(this).val() == 'comments' || $(this).val() == 'battle') && $(this).is(':checked')) {
-			$('.field.comments').show();
-			$('.field.tweet').hide();
-		} else if($(this).val() == 'tweet' && $(this).is(':checked')) {
-			$('.field.tweet').show();
-			$('.field.comments').hide();
-		} else {
-			$('.field.tweet').hide();
-			$('.field.comments').hide();
-		}
 		updatePreview(true);
 	});
-	$('input[name=type]').trigger('click');
+	updatePreview();
 	
 	$('input.color').each(function(){
 		var $input = $(this);
@@ -128,35 +117,6 @@ $(function() {
 				$('a.customize').removeClass('arrow-down');
 			}
 		});
-	});
-	
-	$('input[type=file]').uploadInput({
-		
-		'inputName' : 'photo',
-		'uploadURL' : '/upload/',
-		'progressURL' : '/upload/progress/',
-		
-		'onStart' : function(uploadKey){
-			
-			console.log(uploadKey);
-			
-		},
-		'onComplete' : function(uploadKey, file, data){
-			
-			console.log(data);
-			
-		},
-		'onError' : function(uploadKey, error, data){
-			
-			console.log(data);
-			
-		},
-		'onProgress' : function(uploadKey, percent, data){
-			
-			console.log(data);	
-			
-		}
-		
 	});
 	
 });
