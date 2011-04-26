@@ -2,7 +2,7 @@
 
 #content div.right {
 	background:#eee;
-	padding:50px 20px;
+	padding:20px 20px;
 	width:260px;
 }
 
@@ -152,4 +152,41 @@ select optgroup {
 select optgroup option {
 	margin-left:20px;	
 	text-transform:none;
+}
+
+div.type div.description {
+	font-size:12px;
+	line-height:1em;
+}
+
+div.type div.description {
+	font-size:12px;
+	line-height:1em;
+}
+
+div.type .input {
+	margin-bottom:10px;
+}
+
+div.type .input .radio {
+	float:left;
+	margin-top:32px;
+	width:30px;
+	text-align:center;
+}
+
+div.type .type-selected {
+	background:#ddd;
+}
+
+div.type img.fleft {
+	border:solid 1px #ccc;
+	margin:3px 10px 0 0!important;
+}
+
+div.type .name {
+	margin-top:3px;
+	font-weight:bold;
+	font-size:14px;
+	color:#444;
 }

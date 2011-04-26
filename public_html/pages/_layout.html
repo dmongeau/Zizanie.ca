@@ -42,5 +42,33 @@
         Comme dans Greg au riz.
         </div>
     </div>
+    
+    <!-- Facebook -->
+    <div id="fb-root"></div>
+	<script>
+      window.fbAsyncInit = function() {
+        FB.init({appId: '180117185373629', status: true, cookie: true, xfbml: true});
+	
+		FB.getLoginStatus(function(response) {
+			console.log(response);
+			if (response.session) {
+				$('form a.facebookLogin').hide();
+				FB.api('/me', function(response) {
+					var $user = $('<div class="facebookUser mb10"><div class="fleft mr10"><fb:profile-pic uid="'+response.id+'" facebook-logo="true" linked="false" width="50" height="50"></fb:profile-pic></div><div class="fleft" style="line-height:1em;">Vous êtes connecté en tant que:<br/><strong>'+response.name+'</strong><br/><a href="#" style="font-size:12px;">Changer d\'utilisateur</a></div><div class="clear"></div></div>');
+					$('form a.facebookLogin').after($user);
+					FB.XFBML.parse($user.get(0));
+				});
+			} else {
+			
+			}
+		});
+      };
+      (function() {
+        var e = document.createElement('script'); e.async = true;
+        e.src = document.location.protocol +
+          '//connect.facebook.net/fr_CA/all.js';
+        document.getElementById('fb-root').appendChild(e);
+      }());
+    </script>
 </body>
 </html>

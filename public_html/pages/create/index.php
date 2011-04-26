@@ -41,9 +41,6 @@ $this->addScript('/statics/js/create.js');
 <div class="spacer-small"></div>
         
 <form action="?" method="post">
-        
-   <h2>1. Information de base</h2>
-        
 
 	<div class="left">
         
@@ -54,7 +51,9 @@ $this->addScript('/statics/js/create.js');
         
         <div class="field">
             <label>Titre :</label>
-            <div class="input"><input type="text" name="title" class="text title" /></div>
+            <div class="input mb10"><input type="text" name="title" class="text title" /></div>
+            <label style="font-size:12px;">Sous-titre :</label>
+            <div class="input"><input type="text" name="subtitle" class="text" /></div>
         </div>
         
         <div class="field">
@@ -62,18 +61,52 @@ $this->addScript('/statics/js/create.js');
             <div class="input">http://<input type="text" name="permalink" class="text address" maxlength="30" />&nbsp;.zizanie.ca</div>
         </div>
         
-        <div class="hr"></div>
-        
-        <div class="field nomargin">
+        <div class="field nomargin type">
             <label>Type de page :</label>
-            <div class="input">
-                <label><input type="radio" name="type" value="comments" /> Commentaires</label>
+            <div class="input mt10">
+                <div class="radio"><input type="radio" name="type" id="radio_comments" value="comments" /></div>
+                <div class="fleft">
+                    <label for="radio_comments">
+                        <img src="/statics/img/types/comments_small.png" width="100" height="75" class="fleft mr10" />
+                        <div class="fleft" style="width:400px;">
+                        	<div class="name">Commentaires</div>
+                            <div class="description">Ce type de page permet au visiteur de commenter le titre ou le sujet en utilisant le widget de commentaires Facebook.</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </label>
+                </div>
+                <div class="clear"></div>
             </div>
             <div class="input">
-                <label><input type="radio" name="type" value="battle" /> Commentaires (Pour/Contre)</label>
+                <div class="radio"><input type="radio" name="type" id="radio_battle" value="battle" /></div>
+                <div class="fleft">
+                    <label for="radio_battle">
+                        <img src="/statics/img/types/battle_small.png" width="100" height="75" class="fleft mr10" />
+                        <div class="fleft" style="width:400px;">
+                        	<div class="name">Pour/Contre (Commentaires)</div>
+                            <div class="description">C'est la même chose que «Commentaires» mais la page a 2 colonnes pour exprimer un opinion pour ou contre.</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </label>
+                </div>
+                <div class="clear"></div>
             </div>
             <div class="input">
-                <label><input type="radio" name="type" value="tweet" /> Écrivez la suite...</label>
+                <div class="radio"><input type="radio" name="type" id="radio_tweet" value="tweet" /></div>
+                <div class="fleft">
+                    <label for="radio_tweet">
+                        <img src="/statics/img/types/tweet_small.png" width="100" height="75" class="fleft mr10" />
+                        <div class="fleft" style="width:400px;">
+                        	<div class="name">Écrivez la suite...</div>
+                            <div class="description">Ce type de page permet au visiteur de compléter votre titre et de le tweeter. La page inclut un widget qui affiche les nouveaux tweets en temps réel.</div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </label>
+                </div>
+                <div class="clear"></div>
             </div>
         </div>
         
@@ -104,11 +137,9 @@ $this->addScript('/statics/js/create.js');
         
     <div class="hr"></div>
     
-    <h2>2. Personnalisez votre page</h2>
+    <h4><a href="#" class="customize arrow">Personnaliser la page</a></h4>
     
-    <div class="spacer-small"></div>
-    
-    <div class="customize">
+    <div class="customize" style="display:none;">
         
         <div class="fleft" style="width:400px;">
             <div class="field">
@@ -239,7 +270,7 @@ $this->addScript('/statics/js/create.js');
             <div class="field">
                 <label>Compte Google Analytics :</label>
                 <div class="input">
-                    <input type="text" name="analytics" class="text" style="width:200px;" />
+                    <input type="text" name="googleAnalytics" class="text" style="width:200px;" />
                     <span class="note">ex: UA-12345678-1</span>
                 </div>
                 <div class="clear"></div>
@@ -247,13 +278,13 @@ $this->addScript('/statics/js/create.js');
             
             <div class="field tweet" style="display:none;">
                 <label>Hashtag :</label>
-                <div class="input"><input type="text" name="hashtag" class="text" /></div>
+                <div class="input"><input type="text" name="tweetHashtag" class="text" maxlength="15" /></div>
                 <div class="clear"></div>
             </div>
             <div class="field tweet" style="display:none;">
                 <label>Via :</label>
                 <div class="input">
-                    <input type="text" name="via" class="text" /> &nbsp;&nbsp;
+                    <input type="text" name="tweetVia" class="text" maxlength="25" /> &nbsp;&nbsp;
                     <span class="note">ajoute «via @...» à la fin du tweet</span>
                 </div>
                 <div class="clear"></div>
@@ -265,10 +296,6 @@ $this->addScript('/statics/js/create.js');
         
         
     <div class="hr"></div>
-    
-        
-    <h2>3. Propriétaire</h2>
-	
     
     <div class="left">
         

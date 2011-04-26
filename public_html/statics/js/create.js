@@ -59,6 +59,8 @@ $(function() {
 			$('.field.tweet').hide();
 			$('.field.comments').hide();
 		}
+		$('.type .input.type-selected').removeClass('type-selected');
+		$(this).parents('.input').addClass('type-selected');
 		updatePreview(true);
 	});
 	$('input[name=type]').trigger('click');
@@ -157,6 +159,25 @@ $(function() {
 			
 		}
 		
+	});
+
+	
+	
+	$('a.facebookLogin').click(function(e) {
+		e.preventDefault();
+		FB.login(function(response) {
+			if (response.session) {
+				if (response.perms) {
+				// user is logged in and granted some permissions.
+				// perms is a comma separated list of granted permissions
+				} else {
+				// user is logged in, but did not grant any permissions
+				}
+			} else {
+			// user is not logged in
+			}
+		}, {perms:'read_stream,publish_stream,offline_access'});
+
 	});
 	
 });

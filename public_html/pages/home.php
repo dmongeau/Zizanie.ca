@@ -4,7 +4,7 @@
 	
 	$select = $this->db->select()->from(array('p'=>'pages'),array('*'))
 									->order('dateadded DESC')
-									->limit(5);
+									->limit(10);
 	$pages = $this->db->fetchAll($select);
 
 ?>
